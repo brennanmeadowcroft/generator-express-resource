@@ -1,12 +1,12 @@
 {
   "name": "generator-express-resource",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Yeoman generator",
   "license": "MIT",
   "main": "app/index.js",
   "repository": "brennanmeadowcroft/generator-express-resource",
   "author": {
-    "name": "",
+    "name": "Brennan Meadowcroft",
     "email": "",
     "url": "https://github.com/brennanmeadowcroft"
   },

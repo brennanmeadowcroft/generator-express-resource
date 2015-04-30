@@ -1,8 +1,5 @@
 # generator-express-resource [![Build Status](https://secure.travis-ci.org/brennanmeadowcroft/generator-express-resource.png?branch=master)](https://travis-ci.org/brennanmeadowcroft/generator-express-resource)
 
-> [Yeoman](http://yeoman.io) generator
-
-
 ## Getting Started
 
 ### What is Yeoman?
