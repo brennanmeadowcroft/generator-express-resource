@@ -14,7 +14,7 @@ router.get(<%= resource %>BaseRoute, function(req, res) {
 				});
 });
 
-router.get(tourBaseRoute + ':<%= resource %>Id', function(req, res) {
+router.get(<%= resource %>BaseRoute + ':<%= resource %>Id', function(req, res) {
 	res.header("Content-Type", "application/json");
 
 	models.<%= resourceUpper %>.find({
@@ -88,6 +88,6 @@ router.delete(<%= resource %>BaseRoute + ':<%= resource %>Id', function(req, res
 			res.end(JSON.stringify({ 'message': '<%= resourceUpper %> not found' }));
 		}
 	});
-};
+});
 
 module.exports = router;
