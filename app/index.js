@@ -17,7 +17,7 @@ module.exports = yeoman.generators.Base.extend({
 
     // Have Yeoman greet the user.
     this.log(yosay(
-      'Welcome to the ' + chalk.red('ExpressResource') + ' generator!'
+      'Welcome to the ' + chalk.red('ExpressResource') + ' generator! v0.2.0'
     ));
 
     var prompts = [{
@@ -95,8 +95,8 @@ module.exports = yeoman.generators.Base.extend({
     this.log(yosay(
       "Your " + this.props.capitalizedResource + " has been created! " + 
       "Don't forget to add " + 
-      chalk.red("require('./controllers/" + this.props.resourceName.toLowerCase() + "')(app, models);") +  
-      " to your index.js to register the new resource."
+      chalk.red("app.use('/" + this.props.basePath + "/" + this.props.resourceName.toLowerCase() + "', " + this.props.resourceName.toLowerCase() + ");") + 
+      " to your server.js to register the new resource."
     ));
 
   }
